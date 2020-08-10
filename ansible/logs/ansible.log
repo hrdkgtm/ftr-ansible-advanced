@@ -812,3 +812,274 @@ If you are using a module and expect the file to exist on the remote, see the re
 2020-08-10 14:17:04,197 p=23844 u=hardika.gutama n=ansible |   play #1 (nginx): Install nginx	TAGS: []
 2020-08-10 14:17:04,198 p=23844 u=hardika.gutama n=ansible |       TASK TAGS: []
 
+2020-08-10 14:26:44,087 p=25119 u=hardika.gutama n=ansible | PLAY [Install nginx] *********************************************************************************************************************************************************************************
+2020-08-10 14:26:44,112 p=25119 u=hardika.gutama n=ansible | TASK [include_role : nginx] **************************************************************************************************************************************************************************
+2020-08-10 14:26:44,268 p=25119 u=hardika.gutama n=ansible | TASK [nginx : Configure firewall http & https] *******************************************************************************************************************************************************
+2020-08-10 14:26:44,403 p=25119 u=hardika.gutama n=ansible | fatal: [hardika-vm-1.uatb.lokal]: FAILED! => {"msg": "The conditional check 'ansible_os_family == \"RedHat\"' failed. The error was: error while evaluating conditional (ansible_os_family == \"RedHat\"): 'ansible_os_family' is undefined\n\nThe error appears to be in '/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/nginx/tasks/install_nginx.yml': line 13, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Configure firewall http & https\n  ^ here\n"}
+2020-08-10 14:26:44,404 p=25119 u=hardika.gutama n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************
+2020-08-10 14:26:44,405 p=25119 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-08-10 14:26:59,878 p=25186 u=hardika.gutama n=ansible | PLAY [Install nginx] *********************************************************************************************************************************************************************************
+2020-08-10 14:26:59,899 p=25186 u=hardika.gutama n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************
+2020-08-10 14:27:04,427 p=25186 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:27:04,493 p=25186 u=hardika.gutama n=ansible | TASK [include_role : nginx] **************************************************************************************************************************************************************************
+2020-08-10 14:27:04,733 p=25186 u=hardika.gutama n=ansible | TASK [nginx : Configure firewall http & https] *******************************************************************************************************************************************************
+2020-08-10 14:27:06,468 p=25186 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=80/tcp)
+2020-08-10 14:27:08,062 p=25186 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=443/tcp)
+2020-08-10 14:27:08,073 p=25186 u=hardika.gutama n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************
+2020-08-10 14:27:08,075 p=25186 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 14:27:35,399 p=25400 u=hardika.gutama n=ansible | PLAY [Install nginx] *********************************************************************************************************************************************************************************
+2020-08-10 14:27:35,423 p=25400 u=hardika.gutama n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************
+2020-08-10 14:27:39,512 p=25400 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:27:39,597 p=25400 u=hardika.gutama n=ansible | TASK [include_role : nginx] **************************************************************************************************************************************************************************
+2020-08-10 14:27:39,883 p=25400 u=hardika.gutama n=ansible | TASK [nginx : Configure firewall http & https] *******************************************************************************************************************************************************
+2020-08-10 14:27:41,486 p=25400 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=80/tcp)
+2020-08-10 14:27:43,152 p=25400 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=443/tcp)
+2020-08-10 14:27:43,160 p=25400 u=hardika.gutama n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************
+2020-08-10 14:27:43,162 p=25400 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 14:44:31,782 p=27135 u=hardika.gutama n=ansible | playbook: playbooks/sample-playbook.yaml
+2020-08-10 14:44:31,782 p=27135 u=hardika.gutama n=ansible |   play #1 (dikavm): Setting up ansible user	TAGS: []
+2020-08-10 14:44:31,787 p=27135 u=hardika.gutama n=ansible |       TASK TAGS: [always, configure, install]
+
+2020-08-10 14:45:17,110 p=27227 u=hardika.gutama n=ansible | playbook: playbooks/sample-playbook.yaml
+2020-08-10 14:45:17,111 p=27227 u=hardika.gutama n=ansible |   play #1 (dikavm): Setting up ansible user	TAGS: []
+2020-08-10 14:45:17,112 p=27227 u=hardika.gutama n=ansible |       TASK TAGS: []
+
+2020-08-10 14:45:44,482 p=27287 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ***********************************************************************************************************************************************************************
+2020-08-10 14:45:44,497 p=27287 u=hardika.gutama n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************
+2020-08-10 14:46:18,089 p=27400 u=hardika.gutama n=ansible | ERROR! conflicting action statements: include_tasks, public
+
+The error appears to be in '/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml': line 4, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- include_tasks: install_nginx.yml
+  ^ here
+
+2020-08-10 14:46:35,894 p=27471 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ***********************************************************************************************************************************************************************
+2020-08-10 14:46:35,921 p=27471 u=hardika.gutama n=ansible | TASK [test : Configure firewall] *********************************************************************************************************************************************************************
+2020-08-10 14:46:38,850 p=27471 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:46:38,868 p=27471 u=hardika.gutama n=ansible | TASK [test : copy template to server] ****************************************************************************************************************************************************************
+2020-08-10 14:46:42,051 p=27471 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:46:42,053 p=27471 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart firewalld] ***********************************************************************************************************************************************************
+2020-08-10 14:46:42,252 p=27471 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 14:46:42,256 p=27471 u=hardika.gutama n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************
+2020-08-10 14:46:42,256 p=27471 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 14:48:00,045 p=27727 u=hardika.gutama n=ansible | PLAY [Install nginx] *********************************************************************************************************************************************************************************
+2020-08-10 14:48:00,065 p=27727 u=hardika.gutama n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************
+2020-08-10 14:48:04,677 p=27727 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:48:04,743 p=27727 u=hardika.gutama n=ansible | TASK [include_role : nginx] **************************************************************************************************************************************************************************
+2020-08-10 14:48:04,992 p=27727 u=hardika.gutama n=ansible | TASK [nginx : Configure firewall http & https] *******************************************************************************************************************************************************
+2020-08-10 14:48:06,683 p=27727 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=80/tcp)
+2020-08-10 14:48:08,261 p=27727 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=443/tcp)
+2020-08-10 14:48:08,269 p=27727 u=hardika.gutama n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************
+2020-08-10 14:48:08,270 p=27727 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 14:48:23,862 p=27864 u=hardika.gutama n=ansible | ERROR! Invalid options for import_role: apply
+
+The error appears to be in '/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks/install_lemp.yml': line 6, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+  - import_role:
+    ^ here
+
+2020-08-10 14:48:30,421 p=27893 u=hardika.gutama n=ansible | PLAY [Install nginx] *********************************************************************************************************************************************************************************
+2020-08-10 14:48:30,436 p=27893 u=hardika.gutama n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************
+2020-08-10 14:48:35,359 p=27893 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:48:35,430 p=27893 u=hardika.gutama n=ansible | TASK [nginx : Configure firewall http & https] *******************************************************************************************************************************************************
+2020-08-10 14:48:36,738 p=27893 u=hardika.gutama n=ansible |  [ERROR]: User interrupted execution
+
+2020-08-10 14:48:41,472 p=27977 u=hardika.gutama n=ansible | playbook: playbooks/install_lemp.yml
+2020-08-10 14:48:41,472 p=27977 u=hardika.gutama n=ansible |   play #1 (nginx): Install nginx	TAGS: []
+2020-08-10 14:48:41,474 p=27977 u=hardika.gutama n=ansible |       TASK TAGS: [install]
+
+2020-08-10 14:48:51,655 p=28010 u=hardika.gutama n=ansible | playbook: playbooks/install_lemp.yml
+2020-08-10 14:48:51,655 p=28010 u=hardika.gutama n=ansible |   play #1 (nginx): Install nginx	TAGS: []
+2020-08-10 14:48:51,656 p=28010 u=hardika.gutama n=ansible |       TASK TAGS: []
+
+2020-08-10 14:49:02,887 p=28061 u=hardika.gutama n=ansible | playbook: playbooks/install_lemp.yml
+2020-08-10 14:49:02,887 p=28061 u=hardika.gutama n=ansible |   play #1 (nginx): Install nginx	TAGS: []
+2020-08-10 14:49:02,889 p=28061 u=hardika.gutama n=ansible |       TASK TAGS: []
+
+2020-08-10 14:50:14,425 p=28315 u=hardika.gutama n=ansible | ERROR! conflicting action statements: debug, msg
+
+The error appears to be in '/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks/install_lemp.yml': line 12, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      #     - install
+  - debug:
+    ^ here
+
+2020-08-10 14:50:59,262 p=28436 u=hardika.gutama n=ansible | ERROR! conflicting action statements: debug, msg
+
+The error appears to be in '/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks/install_lemp.yml': line 9, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+      public: yes
+  - debug:
+    ^ here
+
+2020-08-10 14:51:10,496 p=28485 u=hardika.gutama n=ansible | ERROR! conflicting action statements: include_role, public
+
+The error appears to be in '/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks/install_lemp.yml': line 6, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  tasks:
+  - include_role:
+    ^ here
+
+2020-08-10 14:51:47,090 p=28573 u=hardika.gutama n=ansible | PLAY [Install nginx] *********************************************************************************************************************************************************************************
+2020-08-10 14:51:47,115 p=28573 u=hardika.gutama n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************
+2020-08-10 14:51:52,071 p=28573 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:51:52,146 p=28573 u=hardika.gutama n=ansible | TASK [include_role : nginx] **************************************************************************************************************************************************************************
+2020-08-10 14:51:52,433 p=28573 u=hardika.gutama n=ansible | TASK [nginx : Configure firewall http & https] *******************************************************************************************************************************************************
+2020-08-10 14:51:54,642 p=28573 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=80/tcp)
+2020-08-10 14:51:56,850 p=28573 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=443/tcp)
+2020-08-10 14:51:56,952 p=28573 u=hardika.gutama n=ansible | TASK [debug] *****************************************************************************************************************************************************************************************
+2020-08-10 14:51:57,097 p=28573 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "variable ku asdf"
+}
+2020-08-10 14:51:57,099 p=28573 u=hardika.gutama n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************
+2020-08-10 14:51:57,100 p=28573 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 14:52:05,518 p=28698 u=hardika.gutama n=ansible | PLAY [Install nginx] *********************************************************************************************************************************************************************************
+2020-08-10 14:52:05,537 p=28698 u=hardika.gutama n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************
+2020-08-10 14:52:09,914 p=28698 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:52:09,991 p=28698 u=hardika.gutama n=ansible | TASK [include_role : nginx] **************************************************************************************************************************************************************************
+2020-08-10 14:52:10,266 p=28698 u=hardika.gutama n=ansible | TASK [nginx : Configure firewall http & https] *******************************************************************************************************************************************************
+2020-08-10 14:52:11,856 p=28698 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=80/tcp)
+2020-08-10 14:52:13,187 p=28698 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=443/tcp)
+2020-08-10 14:52:13,281 p=28698 u=hardika.gutama n=ansible | TASK [debug] *****************************************************************************************************************************************************************************************
+2020-08-10 14:52:13,404 p=28698 u=hardika.gutama n=ansible | fatal: [hardika-vm-1.uatb.lokal]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'var_1' is undefined\n\nThe error appears to be in '/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks/install_lemp.yml': line 9, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n      # public: yes\n  - debug:\n    ^ here\n"}
+2020-08-10 14:52:13,405 p=28698 u=hardika.gutama n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************
+2020-08-10 14:52:13,405 p=28698 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-08-10 14:54:45,074 p=29112 u=hardika.gutama n=ansible | PLAY [Install nginx] *********************************************************************************************************************************************************************************
+2020-08-10 14:54:45,092 p=29112 u=hardika.gutama n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************
+2020-08-10 14:54:49,756 p=29112 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:54:49,830 p=29112 u=hardika.gutama n=ansible | TASK [include_role : nginx] **************************************************************************************************************************************************************************
+2020-08-10 14:54:50,093 p=29112 u=hardika.gutama n=ansible | TASK [nginx : Configure firewall http & https] *******************************************************************************************************************************************************
+2020-08-10 14:54:53,094 p=29112 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=80/tcp)
+2020-08-10 14:54:54,604 p=29112 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=443/tcp)
+2020-08-10 14:54:54,711 p=29112 u=hardika.gutama n=ansible | TASK [debug] *****************************************************************************************************************************************************************************************
+2020-08-10 14:54:54,873 p=29112 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "variable ku asdf"
+}
+2020-08-10 14:54:54,875 p=29112 u=hardika.gutama n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************
+2020-08-10 14:54:54,876 p=29112 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 14:55:23,059 p=29275 u=hardika.gutama n=ansible | PLAY [Install nginx] *********************************************************************************************************************************************************************************
+2020-08-10 14:55:23,078 p=29275 u=hardika.gutama n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************
+2020-08-10 14:55:28,421 p=29275 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:55:28,494 p=29275 u=hardika.gutama n=ansible | TASK [include_role : nginx] **************************************************************************************************************************************************************************
+2020-08-10 14:55:28,741 p=29275 u=hardika.gutama n=ansible | TASK [nginx : Configure firewall http & https] *******************************************************************************************************************************************************
+2020-08-10 14:55:30,437 p=29275 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=80/tcp)
+2020-08-10 14:55:32,102 p=29275 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=443/tcp)
+2020-08-10 14:55:32,184 p=29275 u=hardika.gutama n=ansible | TASK [debug] *****************************************************************************************************************************************************************************************
+2020-08-10 14:55:32,303 p=29275 u=hardika.gutama n=ansible | skipping: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:55:32,305 p=29275 u=hardika.gutama n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************
+2020-08-10 14:55:32,305 p=29275 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=2    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2020-08-10 14:58:01,115 p=29706 u=hardika.gutama n=ansible | PLAY [Install nginx] *********************************************************************************************************************************************************************************
+2020-08-10 14:58:01,134 p=29706 u=hardika.gutama n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************
+2020-08-10 14:58:05,748 p=29706 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:58:05,821 p=29706 u=hardika.gutama n=ansible | TASK [include_role : nginx] **************************************************************************************************************************************************************************
+2020-08-10 14:58:06,089 p=29706 u=hardika.gutama n=ansible | TASK [nginx : Configure firewall http & https] *******************************************************************************************************************************************************
+2020-08-10 14:58:08,120 p=29706 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=80/tcp)
+2020-08-10 14:58:10,389 p=29706 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=443/tcp)
+2020-08-10 14:58:10,488 p=29706 u=hardika.gutama n=ansible | TASK [include_role : test] ***************************************************************************************************************************************************************************
+2020-08-10 14:58:10,718 p=29706 u=hardika.gutama n=ansible | TASK [test : Install NGINX] **************************************************************************************************************************************************************************
+2020-08-10 14:58:12,807 p=29706 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:58:12,810 p=29706 u=hardika.gutama n=ansible | RUNNING HANDLER [nginx : restart qwerty] *************************************************************************************************************************************************************
+2020-08-10 14:58:13,058 p=29706 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 14:58:13,128 p=29706 u=hardika.gutama n=ansible | TASK [test : Install MySQL] **************************************************************************************************************************************************************************
+2020-08-10 14:58:15,170 p=29706 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:58:15,272 p=29706 u=hardika.gutama n=ansible | TASK [test : Configure firewall] *********************************************************************************************************************************************************************
+2020-08-10 14:58:17,104 p=29706 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:58:17,182 p=29706 u=hardika.gutama n=ansible | TASK [test : debug] **********************************************************************************************************************************************************************************
+2020-08-10 14:58:17,320 p=29706 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 14:58:17,386 p=29706 u=hardika.gutama n=ansible | TASK [debug] *****************************************************************************************************************************************************************************************
+2020-08-10 14:58:17,520 p=29706 u=hardika.gutama n=ansible | skipping: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:58:17,521 p=29706 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart mysql] ***************************************************************************************************************************************************************
+2020-08-10 14:58:17,718 p=29706 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 14:58:17,718 p=29706 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart firewalld] ***********************************************************************************************************************************************************
+2020-08-10 14:58:17,907 p=29706 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 14:58:17,909 p=29706 u=hardika.gutama n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************
+2020-08-10 14:58:17,909 p=29706 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=9    changed=3    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2020-08-10 14:58:45,829 p=29934 u=hardika.gutama n=ansible | PLAY [Install nginx] *********************************************************************************************************************************************************************************
+2020-08-10 14:58:45,850 p=29934 u=hardika.gutama n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************
+2020-08-10 14:58:50,710 p=29934 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:58:50,793 p=29934 u=hardika.gutama n=ansible | TASK [include_role : nginx] **************************************************************************************************************************************************************************
+2020-08-10 14:58:51,050 p=29934 u=hardika.gutama n=ansible | TASK [nginx : Configure firewall http & https] *******************************************************************************************************************************************************
+2020-08-10 14:58:53,111 p=29934 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=80/tcp)
+2020-08-10 14:58:54,493 p=29934 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=443/tcp)
+2020-08-10 14:58:54,599 p=29934 u=hardika.gutama n=ansible | TASK [include_role : test] ***************************************************************************************************************************************************************************
+2020-08-10 14:58:54,840 p=29934 u=hardika.gutama n=ansible | TASK [test : Install NGINX] **************************************************************************************************************************************************************************
+2020-08-10 14:58:55,910 p=29934 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:58:55,913 p=29934 u=hardika.gutama n=ansible | RUNNING HANDLER [nginx : restart qwerty] *************************************************************************************************************************************************************
+2020-08-10 14:58:56,155 p=29934 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting qwerty...."
+}
+2020-08-10 14:58:56,225 p=29934 u=hardika.gutama n=ansible | TASK [test : Install MySQL] **************************************************************************************************************************************************************************
+2020-08-10 14:58:57,124 p=29934 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:58:57,219 p=29934 u=hardika.gutama n=ansible | TASK [test : Configure firewall] *********************************************************************************************************************************************************************
+2020-08-10 14:58:58,467 p=29934 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:58:58,568 p=29934 u=hardika.gutama n=ansible | TASK [test : debug] **********************************************************************************************************************************************************************************
+2020-08-10 14:58:58,692 p=29934 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 14:58:58,763 p=29934 u=hardika.gutama n=ansible | TASK [debug] *****************************************************************************************************************************************************************************************
+2020-08-10 14:58:58,885 p=29934 u=hardika.gutama n=ansible | skipping: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:58:58,887 p=29934 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart mysql] ***************************************************************************************************************************************************************
+2020-08-10 14:58:59,095 p=29934 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 14:58:59,095 p=29934 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart firewalld] ***********************************************************************************************************************************************************
+2020-08-10 14:58:59,298 p=29934 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 14:58:59,302 p=29934 u=hardika.gutama n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************
+2020-08-10 14:58:59,303 p=29934 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=9    changed=3    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2020-08-10 14:59:31,398 p=30178 u=hardika.gutama n=ansible | PLAY [Install nginx] *********************************************************************************************************************************************************************************
+2020-08-10 14:59:31,419 p=30178 u=hardika.gutama n=ansible | TASK [Gathering Facts] *******************************************************************************************************************************************************************************
+2020-08-10 14:59:35,636 p=30178 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:59:35,703 p=30178 u=hardika.gutama n=ansible | TASK [include_role : nginx] **************************************************************************************************************************************************************************
+2020-08-10 14:59:35,965 p=30178 u=hardika.gutama n=ansible | TASK [nginx : Configure firewall http & https] *******************************************************************************************************************************************************
+2020-08-10 14:59:38,819 p=30178 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=80/tcp)
+2020-08-10 14:59:40,982 p=30178 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => (item=443/tcp)
+2020-08-10 14:59:41,113 p=30178 u=hardika.gutama n=ansible | TASK [include_role : test] ***************************************************************************************************************************************************************************
+2020-08-10 14:59:41,363 p=30178 u=hardika.gutama n=ansible | TASK [test : Install NGINX] **************************************************************************************************************************************************************************
+2020-08-10 14:59:43,086 p=30178 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:59:43,088 p=30178 u=hardika.gutama n=ansible | RUNNING HANDLER [nginx : restart qwerty] *************************************************************************************************************************************************************
+2020-08-10 14:59:43,325 p=30178 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting qwerty...."
+}
+2020-08-10 14:59:43,390 p=30178 u=hardika.gutama n=ansible | TASK [test : Install MySQL] **************************************************************************************************************************************************************************
+2020-08-10 14:59:44,929 p=30178 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:59:45,058 p=30178 u=hardika.gutama n=ansible | TASK [test : Configure firewall] *********************************************************************************************************************************************************************
+2020-08-10 14:59:46,032 p=30178 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 14:59:46,157 p=30178 u=hardika.gutama n=ansible | TASK [test : debug] **********************************************************************************************************************************************************************************
+2020-08-10 14:59:46,284 p=30178 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 14:59:46,350 p=30178 u=hardika.gutama n=ansible | TASK [debug] *****************************************************************************************************************************************************************************************
+2020-08-10 14:59:46,481 p=30178 u=hardika.gutama n=ansible | fatal: [hardika-vm-1.uatb.lokal]: FAILED! => {"msg": "The conditional check 'var_1 == \"asdfxxxxx\"' failed. The error was: error while evaluating conditional (var_1 == \"asdfxxxxx\"): 'var_1' is undefined\n\nThe error appears to be in '/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks/install_lemp.yml': line 15, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n          - install\n  - debug:\n    ^ here\n"}
+2020-08-10 14:59:46,482 p=30178 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart mysql] ***************************************************************************************************************************************************************
+2020-08-10 14:59:46,483 p=30178 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart firewalld] ***********************************************************************************************************************************************************
+2020-08-10 14:59:46,484 p=30178 u=hardika.gutama n=ansible | PLAY RECAP *******************************************************************************************************************************************************************************************
+2020-08-10 14:59:46,484 p=30178 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=7    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   

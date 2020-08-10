@@ -1,2 +1,3 @@
 ---
 # defaults file for nginx
+var_1: asdf

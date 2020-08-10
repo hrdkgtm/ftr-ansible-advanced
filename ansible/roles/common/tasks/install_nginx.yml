@@ -2,7 +2,7 @@
 - name: Install NGINX
   command: echo 'install nginx'
   notify:
-    - restart nginx
+    - restart qwerty
   tags:
     - install
     

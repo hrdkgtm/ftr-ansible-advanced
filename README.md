@@ -20,3 +20,9 @@ https://docs.ansible.com/ansible/latest/modules/import_role_module.html#import-r
 https://docs.ansible.com/ansible/latest/modules/include_tasks_module.html#include-tasks-module
 
 https://docs.ansible.com/ansible/latest/modules/import_tasks_module.html#import-tasks-module
+
+## Conditionals
+
+https://docs.ansible.com/ansible/latest/user_guide/playbooks_conditionals.html
+
+https://github.com/geerlingguy/ansible-role-mysql/blob/master/tasks/main.yml

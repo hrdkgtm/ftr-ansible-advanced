@@ -1,9 +1,17 @@
 ---
 - name: Install nginx 
   hosts: nginx
+  gather_facts: yes
   tasks:
   - include_role:
       name: nginx
+      public: yes
+  - include_role:
+      name: test
+      public: yes
       apply:
         tags:
           - install
+  - debug:
+      msg: "variable ku {{ var_1 }}"
+    when: var_1 == "asdfxxxxx"
