@@ -1,0 +1,53 @@
+---
+- name: Setting up ansible user
+  hosts: all
+  become: "yes"
+  vars:
+    ansible_ssh_port: 2209
+    ansible_user: linux1-user
+    ansible_become_user: root
+    ansible_become_method: su
+    ansible_ssh_pass: "{{ linux1user_password }}"
+    ansible_become_pass: "{{ become_password }}"
+  handlers:
+    - name: reload sshd
+      service:
+        name: sshd
+        state: reloaded
+  tasks:
+    - name: groupadd ansible
+      group:
+        name: ansible
+        gid: 3001
+        state: present
+    - name: useradd ansible
+      user:
+        name: ansible
+        comment: Ansible user for Configuration Management
+        password: '!'
+        group: ansible
+        uid: 3001
+        home: /opt/ansible
+        create_home: "yes"
+        state: present
+    - name: Add ssh public key from ansible controller
+      authorized_key:
+        user: ansible
+        key: "{{ lookup('file', '/opt/ansible/.ssh/id_rsa.pub') }}"
+        state: present
+    - name: Allow ansible user for SSH
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        state: present
+        regexp: '^AllowUsers'
+        line: 'AllowUsers      linux1-user chef ansible'
+      notify:
+        - reload sshd
+    - name: Add ansible user in /etc/sudoers
+      lineinfile:
+        path: /etc/sudoers
+        state: present
+        regexp: '^ansible	ALL='
+        line: 'ansible	ALL=(ALL) NOPASSWD:ALL'
+        insertafter: '^chef'
+        validate: /usr/sbin/visudo -cf %s
