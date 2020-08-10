@@ -1,0 +1,9 @@
+---
+- name: Install nginx 
+  hosts: nginx
+  tasks:
+  - include_role:
+      name: nginx
+      apply:
+        tags:
+          - install

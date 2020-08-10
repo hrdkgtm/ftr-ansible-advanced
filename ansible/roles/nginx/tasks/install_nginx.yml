@@ -1,0 +1,23 @@
+---
+- name: install nginx via yum
+  yum:
+    name: nginx
+    state: latest
+  notify:
+    - enable nginx
+    - restart nginx
+  tags:
+    - install
+    - never
+
+- name: Configure firewall http & https
+  become: yes
+  firewalld:
+    port: "{{ item }}"
+    state: enabled
+    permanent: yes
+  with_items:
+    - "80/tcp"
+    - "443/tcp"
+  tags:
+    - install

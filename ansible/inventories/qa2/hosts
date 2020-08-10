@@ -8,3 +8,12 @@
 hardika-vm-1.uatb.lokal
 hardika-vm-2.uatb.lokal
 hardika-vm-3.uatb.lokal
+
+[nginx]
+hardika-vm-1.uatb.lokal
+
+[mysql]
+hardika-vm-2.uatb.lokal
+
+[php]
+hardika-vm-1.uatb.lokal
