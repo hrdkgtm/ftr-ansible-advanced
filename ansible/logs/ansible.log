@@ -1,0 +1,52 @@
+2020-08-10 11:00:58,349 p=8245 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal | FAILED! => {
+    "msg": "Attempting to decrypt but no vault secrets found"
+}
+2020-08-10 11:00:58,354 p=8245 u=hardika.gutama n=ansible | hardika-vm-2.uatb.lokal | FAILED! => {
+    "msg": "Attempting to decrypt but no vault secrets found"
+}
+2020-08-10 11:00:58,362 p=8245 u=hardika.gutama n=ansible | hardika-vm-3.uatb.lokal | FAILED! => {
+    "msg": "Attempting to decrypt but no vault secrets found"
+}
+2020-08-10 11:01:08,200 p=8270 u=hardika.gutama n=ansible | hardika-vm-2.uatb.lokal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: linux1-userxxxx@hardika-vm-2.uatb.lokal: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2020-08-10 11:01:08,203 p=8270 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: linux1-userxxxx@hardika-vm-1.uatb.lokal: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2020-08-10 11:01:08,207 p=8270 u=hardika.gutama n=ansible | hardika-vm-3.uatb.lokal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: linux1-userxxxx@hardika-vm-3.uatb.lokal: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2020-08-10 11:01:24,293 p=8307 u=hardika.gutama n=ansible | hardika-vm-2.uatb.lokal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: linux1-user@hardika-vm-2.uatb.lokal: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2020-08-10 11:01:24,305 p=8307 u=hardika.gutama n=ansible | hardika-vm-3.uatb.lokal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: linux1-user@hardika-vm-3.uatb.lokal: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2020-08-10 11:01:25,593 p=8307 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2020-08-10 11:05:32,530 p=8632 u=hardika.gutama n=ansible | ERROR! the role 'test' was not found in /Users/hardika.gutama/Workstuff/git/ftr-ansible-advanced/ansible/playbooks/roles:/Users/hardika.gutama/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/Users/hardika.gutama/Workstuff/git/ftr-ansible-advanced/ansible/playbooks
+
+The error appears to be in '/Users/hardika.gutama/Workstuff/git/ftr-ansible-advanced/ansible/playbooks/sample-playbook.yaml': line 15, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - test
+      ^ here
+

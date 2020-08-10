@@ -1,8 +1,8 @@
-[web]
-ansible-future-1.uatb.lokal
+#[web]
+#ansible-future-1.uatb.lokal
 
-[db]
-ansible-future-2.uatb.lokal
+#[db]
+#ansible-future-2.uatb.lokal
 
 [dikavm]
 hardika-vm-1.uatb.lokal
