@@ -1,0 +1,20 @@
+---
+- name: Install NGINX
+  command: echo 'install nginx'
+  notify:
+    - restart nginx
+  tags:
+    - install
+    
+- name: Force all notified handlers to run at this point, not waiting for normal sync points
+  meta: flush_handlers
+  tags:
+    - install
+
+- name: Install MySQL
+  command: echo 'install mysql'
+  notify:
+    - restart mysql
+  tags:
+    - install
+

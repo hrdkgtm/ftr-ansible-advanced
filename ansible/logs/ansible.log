@@ -50,3 +50,589 @@ The offending line appears to be:
     - test
       ^ here
 
+2020-08-10 11:22:07,272 p=11419 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: no such identity: /home/GDN-COMMERCE.COM/hardika.gutama/.ssh/ansible: No such file or directory\r\nlinux1-user@hardika-vm-1.uatb.lokal: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2020-08-10 11:22:07,306 p=11419 u=hardika.gutama n=ansible | hardika-vm-3.uatb.lokal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: no such identity: /home/GDN-COMMERCE.COM/hardika.gutama/.ssh/ansible: No such file or directory\r\nlinux1-user@hardika-vm-3.uatb.lokal: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2020-08-10 11:22:07,307 p=11419 u=hardika.gutama n=ansible | hardika-vm-2.uatb.lokal | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: no such identity: /home/GDN-COMMERCE.COM/hardika.gutama/.ssh/ansible: No such file or directory\r\nlinux1-user@hardika-vm-2.uatb.lokal: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+2020-08-10 11:22:35,425 p=11494 u=hardika.gutama n=ansible | hardika-vm-2.uatb.lokal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2020-08-10 11:22:35,433 p=11494 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2020-08-10 11:22:35,589 p=11494 u=hardika.gutama n=ansible | hardika-vm-3.uatb.lokal | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2020-08-10 11:23:21,441 p=11700 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 11:23:21,467 p=11700 u=hardika.gutama n=ansible | TASK [debug] ******************************************************************************************************************************************
+2020-08-10 11:23:21,723 p=11700 u=hardika.gutama n=ansible | ok: [hardika-vm-3.uatb.lokal] => {
+    "msg": "First task"
+}
+2020-08-10 11:23:21,740 p=11700 u=hardika.gutama n=ansible | ok: [hardika-vm-2.uatb.lokal] => {
+    "msg": "First task"
+}
+2020-08-10 11:23:21,755 p=11700 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "First task"
+}
+2020-08-10 11:23:21,759 p=11700 u=hardika.gutama n=ansible | TASK [debug] ******************************************************************************************************************************************
+2020-08-10 11:23:22,009 p=11700 u=hardika.gutama n=ansible | ok: [hardika-vm-2.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 11:23:22,055 p=11700 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 11:23:22,079 p=11700 u=hardika.gutama n=ansible | ok: [hardika-vm-3.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 11:23:22,085 p=11700 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 11:23:22,086 p=11700 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 11:23:22,086 p=11700 u=hardika.gutama n=ansible | hardika-vm-2.uatb.lokal    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 11:23:22,086 p=11700 u=hardika.gutama n=ansible | hardika-vm-3.uatb.lokal    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 11:23:33,426 p=11744 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 11:23:33,453 p=11744 u=hardika.gutama n=ansible | TASK [debug] ******************************************************************************************************************************************
+2020-08-10 11:23:33,623 p=11744 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "First task"
+}
+2020-08-10 11:23:33,626 p=11744 u=hardika.gutama n=ansible | TASK [debug] ******************************************************************************************************************************************
+2020-08-10 11:23:33,802 p=11744 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 11:23:33,809 p=11744 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 11:23:33,809 p=11744 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 11:25:57,048 p=12116 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 11:25:57,074 p=12116 u=hardika.gutama n=ansible | TASK [debug] ******************************************************************************************************************************************
+2020-08-10 11:25:57,253 p=12116 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "configure nginx"
+}
+2020-08-10 11:25:57,260 p=12116 u=hardika.gutama n=ansible | TASK [debug] ******************************************************************************************************************************************
+2020-08-10 11:25:57,461 p=12116 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 11:25:57,462 p=12116 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 11:25:57,465 p=12116 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 11:27:19,374 p=12358 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 11:27:19,396 p=12358 u=hardika.gutama n=ansible | TASK [test command] ***********************************************************************************************************************************
+2020-08-10 11:27:22,017 p=12358 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 11:27:22,027 p=12358 u=hardika.gutama n=ansible | TASK [debug] ******************************************************************************************************************************************
+2020-08-10 11:27:22,228 p=12358 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 11:27:22,229 p=12358 u=hardika.gutama n=ansible | RUNNING HANDLER [restart nginx] ***********************************************************************************************************************
+2020-08-10 11:27:22,412 p=12358 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 11:27:22,414 p=12358 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 11:27:22,414 p=12358 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 11:34:21,611 p=13340 u=hardika.gutama n=ansible | ERROR! the role 'test' was not found in /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks/roles:/home/GDN-COMMERCE.COM/hardika.gutama/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks
+
+The error appears to be in '/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks/sample-playbook.yaml': line 6, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - test
+      ^ here
+
+2020-08-10 11:34:31,891 p=13383 u=hardika.gutama n=ansible | ERROR! 'role' is not a valid attribute for a Play
+
+The error appears to be in '/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks/sample-playbook.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- name: Setting up ansible user
+  ^ here
+
+2020-08-10 11:34:51,335 p=13439 u=hardika.gutama n=ansible | ERROR! the role 'test' was not found in /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks/roles:/home/GDN-COMMERCE.COM/hardika.gutama/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks
+
+The error appears to be in '/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks/sample-playbook.yaml': line 6, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - test
+      ^ here
+
+2020-08-10 11:35:00,264 p=13477 u=hardika.gutama n=ansible | ERROR! the role 'test' was not found in /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks/roles:/home/GDN-COMMERCE.COM/hardika.gutama/.ansible/roles:/usr/share/ansible/roles:/etc/ansible/roles:/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks
+
+The error appears to be in '/home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/playbooks/sample-playbook.yaml': line 6, column 5, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+  - test
+    ^ here
+
+2020-08-10 11:35:42,978 p=13608 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 11:35:42,997 p=13608 u=hardika.gutama n=ansible | TASK [test : test command] ****************************************************************************************************************************
+2020-08-10 11:35:46,144 p=13608 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 11:35:46,154 p=13608 u=hardika.gutama n=ansible | TASK [test : debug] ***********************************************************************************************************************************
+2020-08-10 11:35:46,356 p=13608 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 11:35:46,363 p=13608 u=hardika.gutama n=ansible | TASK [test : copy template to server] *****************************************************************************************************************
+2020-08-10 11:35:46,708 p=13608 u=hardika.gutama n=ansible | fatal: [hardika-vm-1.uatb.lokal]: FAILED! => {"changed": false, "msg": "AnsibleUndefinedVariable: 'my_name' is undefined"}
+2020-08-10 11:35:46,709 p=13608 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart nginx] ****************************************************************************************************************
+2020-08-10 11:35:46,710 p=13608 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 11:35:46,711 p=13608 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-08-10 11:36:19,678 p=13756 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 11:36:19,703 p=13756 u=hardika.gutama n=ansible | TASK [test : test command] ****************************************************************************************************************************
+2020-08-10 11:36:21,728 p=13756 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 11:36:21,733 p=13756 u=hardika.gutama n=ansible | TASK [test : debug] ***********************************************************************************************************************************
+2020-08-10 11:36:21,918 p=13756 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 11:36:21,926 p=13756 u=hardika.gutama n=ansible | TASK [test : copy template to server] *****************************************************************************************************************
+2020-08-10 11:36:24,684 p=13756 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 11:36:24,685 p=13756 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart nginx] ****************************************************************************************************************
+2020-08-10 11:36:24,868 p=13756 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 11:36:24,869 p=13756 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 11:36:24,869 p=13756 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 11:37:50,956 p=13990 u=hardika.gutama n=ansible | ansible-playbook 2.9.5
+  config file = /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/ansible.cfg
+  configured module search path = ['/home/GDN-COMMERCE.COM/hardika.gutama/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.6/dist-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.6.9 (default, Jul 17 2020, 12:50:27) [GCC 8.4.0]
+2020-08-10 11:37:50,956 p=13990 u=hardika.gutama n=ansible | Using /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/ansible.cfg as config file
+2020-08-10 11:37:51,315 p=13990 u=hardika.gutama n=ansible | PLAYBOOK: sample-playbook.yaml ************************************************************************************************************************
+2020-08-10 11:37:51,316 p=13990 u=hardika.gutama n=ansible | 1 plays in playbooks/sample-playbook.yaml
+2020-08-10 11:37:51,320 p=13990 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 11:37:51,334 p=13990 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:37:51,342 p=13990 u=hardika.gutama n=ansible | TASK [test : test command] ****************************************************************************************************************************
+2020-08-10 11:37:51,342 p=13990 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:3
+2020-08-10 11:37:53,660 p=13990 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "changed": true, "cmd": ["echo", "install nginx"], "delta": "0:00:00.018522", "end": "2020-08-10 10:27:33.059418", "rc": 0, "start": "2020-08-10 10:27:33.040896", "stderr": "", "stderr_lines": [], "stdout": "install nginx", "stdout_lines": ["install nginx"]}
+2020-08-10 11:37:53,671 p=13990 u=hardika.gutama n=ansible | TASK [test : debug] ***********************************************************************************************************************************
+2020-08-10 11:37:53,672 p=13990 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:7
+2020-08-10 11:37:53,871 p=13990 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 11:37:53,875 p=13990 u=hardika.gutama n=ansible | TASK [test : copy template to server] *****************************************************************************************************************
+2020-08-10 11:37:53,876 p=13990 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:9
+2020-08-10 11:37:56,713 p=13990 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {"changed": false, "checksum": "608c432ab01fe5c88b81d055d70812e5f47488bb", "dest": "/root/dika.txt", "gid": 0, "group": "root", "mode": "0664", "owner": "root", "path": "/root/dika.txt", "secontext": "system_u:object_r:admin_home_t:s0", "size": 27, "state": "file", "uid": 0}
+2020-08-10 11:37:56,716 p=13990 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart nginx] ****************************************************************************************************************
+2020-08-10 11:37:56,717 p=13990 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/handlers/main.yml:3
+2020-08-10 11:37:56,907 p=13990 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 11:37:56,908 p=13990 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:37:56,909 p=13990 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:37:56,910 p=13990 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 11:37:56,910 p=13990 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 11:38:33,990 p=14186 u=hardika.gutama n=ansible | ansible-playbook 2.9.5
+  config file = /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/ansible.cfg
+  configured module search path = ['/home/GDN-COMMERCE.COM/hardika.gutama/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.6/dist-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.6.9 (default, Jul 17 2020, 12:50:27) [GCC 8.4.0]
+2020-08-10 11:38:33,991 p=14186 u=hardika.gutama n=ansible | Using /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/ansible.cfg as config file
+2020-08-10 11:38:34,353 p=14186 u=hardika.gutama n=ansible | PLAYBOOK: sample-playbook.yaml ************************************************************************************************************************
+2020-08-10 11:38:34,353 p=14186 u=hardika.gutama n=ansible | 1 plays in playbooks/sample-playbook.yaml
+2020-08-10 11:38:34,358 p=14186 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 11:38:34,380 p=14186 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:38:34,395 p=14186 u=hardika.gutama n=ansible | TASK [test : test command] ****************************************************************************************************************************
+2020-08-10 11:38:34,395 p=14186 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:3
+2020-08-10 11:38:37,153 p=14186 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "changed": true, "cmd": ["echo", "install nginx"], "delta": "0:00:00.019953", "end": "2020-08-10 10:28:16.546914", "rc": 0, "start": "2020-08-10 10:28:16.526961", "stderr": "", "stderr_lines": [], "stdout": "install nginx", "stdout_lines": ["install nginx"]}
+2020-08-10 11:38:37,161 p=14186 u=hardika.gutama n=ansible | TASK [test : debug] ***********************************************************************************************************************************
+2020-08-10 11:38:37,161 p=14186 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:7
+2020-08-10 11:38:37,412 p=14186 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 11:38:37,428 p=14186 u=hardika.gutama n=ansible | TASK [test : copy template to server] *****************************************************************************************************************
+2020-08-10 11:38:37,429 p=14186 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:9
+2020-08-10 11:38:41,167 p=14186 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal] => {"changed": true, "checksum": "1cef6ec97c1e42230ddbf4d03e8b99e498bde71b", "dest": "/root/dika.txt", "gid": 0, "group": "root", "md5sum": "a185c51d643651f049e5482948775532", "mode": "0664", "owner": "root", "secontext": "system_u:object_r:admin_home_t:s0", "size": 21, "src": "/home/linux1-user/.ansible/tmp/ansible-tmp-1597034317.6540484-132973235352618/source", "state": "file", "uid": 0}
+2020-08-10 11:38:41,168 p=14186 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart nginx] ****************************************************************************************************************
+2020-08-10 11:38:41,168 p=14186 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/handlers/main.yml:3
+2020-08-10 11:38:41,362 p=14186 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 11:38:41,363 p=14186 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:38:41,364 p=14186 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:38:41,368 p=14186 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 11:38:41,369 p=14186 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 11:50:56,265 p=15619 u=hardika.gutama n=ansible | ansible-playbook 2.9.5
+  config file = /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/ansible.cfg
+  configured module search path = ['/home/GDN-COMMERCE.COM/hardika.gutama/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.6/dist-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.6.9 (default, Jul 17 2020, 12:50:27) [GCC 8.4.0]
+2020-08-10 11:50:56,266 p=15619 u=hardika.gutama n=ansible | Using /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/ansible.cfg as config file
+2020-08-10 11:50:56,643 p=15619 u=hardika.gutama n=ansible | PLAYBOOK: sample-playbook.yaml ************************************************************************************************************************
+2020-08-10 11:50:56,643 p=15619 u=hardika.gutama n=ansible | 1 plays in playbooks/sample-playbook.yaml
+2020-08-10 11:50:56,647 p=15619 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 11:50:56,663 p=15619 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:50:56,675 p=15619 u=hardika.gutama n=ansible | TASK [test : test command] ****************************************************************************************************************************
+2020-08-10 11:50:56,675 p=15619 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:3
+2020-08-10 11:50:59,239 p=15619 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "changed": true, "cmd": ["echo", "install nginx"], "delta": "0:00:00.022043", "end": "2020-08-10 10:40:38.550434", "rc": 0, "start": "2020-08-10 10:40:38.528391", "stderr": "", "stderr_lines": [], "stdout": "install nginx", "stdout_lines": ["install nginx"]}
+2020-08-10 11:50:59,245 p=15619 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart nginx] ****************************************************************************************************************
+2020-08-10 11:50:59,245 p=15619 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/handlers/main.yml:3
+2020-08-10 11:50:59,435 p=15619 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 11:50:59,435 p=15619 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:50:59,439 p=15619 u=hardika.gutama n=ansible | TASK [test : debug] ***********************************************************************************************************************************
+2020-08-10 11:50:59,439 p=15619 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:11
+2020-08-10 11:50:59,637 p=15619 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 11:50:59,646 p=15619 u=hardika.gutama n=ansible | TASK [test : copy template to server] *****************************************************************************************************************
+2020-08-10 11:50:59,646 p=15619 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:13
+2020-08-10 11:51:02,850 p=15619 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {"changed": false, "checksum": "1cef6ec97c1e42230ddbf4d03e8b99e498bde71b", "dest": "/root/dika.txt", "gid": 0, "group": "root", "mode": "0664", "owner": "root", "path": "/root/dika.txt", "secontext": "system_u:object_r:admin_home_t:s0", "size": 21, "state": "file", "uid": 0}
+2020-08-10 11:51:02,854 p=15619 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:51:02,855 p=15619 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:51:02,858 p=15619 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 11:51:02,858 p=15619 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 11:52:55,301 p=15866 u=hardika.gutama n=ansible | ansible-playbook 2.9.5
+  config file = /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/ansible.cfg
+  configured module search path = ['/home/GDN-COMMERCE.COM/hardika.gutama/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.6/dist-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.6.9 (default, Jul 17 2020, 12:50:27) [GCC 8.4.0]
+2020-08-10 11:52:55,301 p=15866 u=hardika.gutama n=ansible | Using /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/ansible.cfg as config file
+2020-08-10 11:52:55,677 p=15866 u=hardika.gutama n=ansible | PLAYBOOK: sample-playbook.yaml ************************************************************************************************************************
+2020-08-10 11:52:55,677 p=15866 u=hardika.gutama n=ansible | 1 plays in playbooks/sample-playbook.yaml
+2020-08-10 11:52:55,681 p=15866 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 11:52:55,693 p=15866 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:52:55,704 p=15866 u=hardika.gutama n=ansible | TASK [test : test command] ****************************************************************************************************************************
+2020-08-10 11:52:55,704 p=15866 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:3
+2020-08-10 11:52:58,158 p=15866 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "changed": true, "cmd": ["echo", "install nginx"], "delta": "0:00:00.020616", "end": "2020-08-10 10:42:37.471277", "rc": 0, "start": "2020-08-10 10:42:37.450661", "stderr": "", "stderr_lines": [], "stdout": "install nginx", "stdout_lines": ["install nginx"]}
+2020-08-10 11:52:58,165 p=15866 u=hardika.gutama n=ansible | TASK [test : test command] ****************************************************************************************************************************
+2020-08-10 11:52:58,165 p=15866 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:8
+2020-08-10 11:53:00,257 p=15866 u=hardika.gutama n=ansible | ERROR! The requested handler 'restart mysql' was not found in either the main handlers list nor in the listening handlers list
+2020-08-10 11:53:21,818 p=15958 u=hardika.gutama n=ansible | ansible-playbook 2.9.5
+  config file = /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/ansible.cfg
+  configured module search path = ['/home/GDN-COMMERCE.COM/hardika.gutama/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.6/dist-packages/ansible
+  executable location = /usr/local/bin/ansible-playbook
+  python version = 3.6.9 (default, Jul 17 2020, 12:50:27) [GCC 8.4.0]
+2020-08-10 11:53:21,818 p=15958 u=hardika.gutama n=ansible | Using /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/ansible.cfg as config file
+2020-08-10 11:53:22,174 p=15958 u=hardika.gutama n=ansible | PLAYBOOK: sample-playbook.yaml ************************************************************************************************************************
+2020-08-10 11:53:22,174 p=15958 u=hardika.gutama n=ansible | 1 plays in playbooks/sample-playbook.yaml
+2020-08-10 11:53:22,177 p=15958 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 11:53:22,190 p=15958 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:53:22,205 p=15958 u=hardika.gutama n=ansible | TASK [test : test command] ****************************************************************************************************************************
+2020-08-10 11:53:22,205 p=15958 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:3
+2020-08-10 11:53:24,088 p=15958 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal] => {"ansible_facts": {"discovered_interpreter_python": "/usr/bin/python"}, "changed": true, "cmd": ["echo", "install nginx"], "delta": "0:00:00.018268", "end": "2020-08-10 10:43:03.398303", "rc": 0, "start": "2020-08-10 10:43:03.380035", "stderr": "", "stderr_lines": [], "stdout": "install nginx", "stdout_lines": ["install nginx"]}
+2020-08-10 11:53:24,106 p=15958 u=hardika.gutama n=ansible | TASK [test : test command] ****************************************************************************************************************************
+2020-08-10 11:53:24,106 p=15958 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:8
+2020-08-10 11:53:26,904 p=15958 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal] => {"changed": true, "cmd": ["echo", "install mysql"], "delta": "0:00:00.023864", "end": "2020-08-10 10:43:06.208082", "rc": 0, "start": "2020-08-10 10:43:06.184218", "stderr": "", "stderr_lines": [], "stdout": "install mysql", "stdout_lines": ["install mysql"]}
+2020-08-10 11:53:26,906 p=15958 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart nginx] ****************************************************************************************************************
+2020-08-10 11:53:26,909 p=15958 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/handlers/main.yml:3
+2020-08-10 11:53:27,124 p=15958 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 11:53:27,124 p=15958 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart mysql] ****************************************************************************************************************
+2020-08-10 11:53:27,125 p=15958 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/handlers/main.yml:7
+2020-08-10 11:53:27,290 p=15958 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 11:53:27,290 p=15958 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:53:27,296 p=15958 u=hardika.gutama n=ansible | TASK [test : Configure firewall] **********************************************************************************************************************
+2020-08-10 11:53:27,296 p=15958 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:16
+2020-08-10 11:53:29,047 p=15958 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal] => {"changed": true, "cmd": ["echo", "install nginx"], "delta": "0:00:00.018338", "end": "2020-08-10 10:43:08.363281", "rc": 0, "start": "2020-08-10 10:43:08.344943", "stderr": "", "stderr_lines": [], "stdout": "install nginx", "stdout_lines": ["install nginx"]}
+2020-08-10 11:53:29,054 p=15958 u=hardika.gutama n=ansible | TASK [test : debug] ***********************************************************************************************************************************
+2020-08-10 11:53:29,054 p=15958 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:21
+2020-08-10 11:53:29,314 p=15958 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 11:53:29,322 p=15958 u=hardika.gutama n=ansible | TASK [test : copy template to server] *****************************************************************************************************************
+2020-08-10 11:53:29,322 p=15958 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/tasks/main.yml:23
+2020-08-10 11:53:33,159 p=15958 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {"changed": false, "checksum": "1cef6ec97c1e42230ddbf4d03e8b99e498bde71b", "dest": "/root/dika.txt", "gid": 0, "group": "root", "mode": "0664", "owner": "root", "path": "/root/dika.txt", "secontext": "system_u:object_r:admin_home_t:s0", "size": 21, "state": "file", "uid": 0}
+2020-08-10 11:53:33,160 p=15958 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart firewalld] ************************************************************************************************************
+2020-08-10 11:53:33,160 p=15958 u=hardika.gutama n=ansible | task path: /home/GDN-COMMERCE.COM/hardika.gutama/Workspace/project/future-F3/ftr-ansible-advanced/ansible/roles/test/handlers/main.yml:11
+2020-08-10 11:53:33,366 p=15958 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 11:53:33,366 p=15958 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:53:33,368 p=15958 u=hardika.gutama n=ansible | META: ran handlers
+2020-08-10 11:53:33,372 p=15958 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 11:53:33,372 p=15958 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:00:33,921 p=12012 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 13:00:33,943 p=12012 u=hardika.gutama n=ansible | TASK [test : test command] ****************************************************************************************************************************
+2020-08-10 13:00:35,597 p=12012 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:00:35,608 p=12012 u=hardika.gutama n=ansible | TASK [test : test command] ****************************************************************************************************************************
+2020-08-10 13:00:36,666 p=12012 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:00:36,669 p=12012 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart nginx] ****************************************************************************************************************
+2020-08-10 13:00:36,825 p=12012 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:00:36,826 p=12012 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart mysql] ****************************************************************************************************************
+2020-08-10 13:00:36,964 p=12012 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:00:36,966 p=12012 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 13:00:36,967 p=12012 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:01:13,912 p=12158 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 13:01:13,931 p=12158 u=hardika.gutama n=ansible | TASK [test : Install NGINX] ***************************************************************************************************************************
+2020-08-10 13:01:15,310 p=12158 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:01:15,319 p=12158 u=hardika.gutama n=ansible | TASK [test : Install MySQL] ***************************************************************************************************************************
+2020-08-10 13:01:16,432 p=12158 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:01:16,434 p=12158 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart nginx] ****************************************************************************************************************
+2020-08-10 13:01:16,603 p=12158 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:01:16,604 p=12158 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart mysql] ****************************************************************************************************************
+2020-08-10 13:01:16,746 p=12158 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:01:16,750 p=12158 u=hardika.gutama n=ansible | TASK [test : Configure firewall] **********************************************************************************************************************
+2020-08-10 13:01:17,822 p=12158 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:01:17,830 p=12158 u=hardika.gutama n=ansible | TASK [test : debug] ***********************************************************************************************************************************
+2020-08-10 13:01:17,992 p=12158 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 13:01:17,997 p=12158 u=hardika.gutama n=ansible | TASK [test : copy template to server] *****************************************************************************************************************
+2020-08-10 13:01:20,252 p=12158 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:01:20,255 p=12158 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart firewalld] ************************************************************************************************************
+2020-08-10 13:01:20,451 p=12158 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:01:20,453 p=12158 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 13:01:20,454 p=12158 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=8    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:01:56,949 p=12359 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 13:01:56,975 p=12359 u=hardika.gutama n=ansible | TASK [test : Configure firewall] **********************************************************************************************************************
+2020-08-10 13:01:58,296 p=12359 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:01:58,298 p=12359 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart firewalld] ************************************************************************************************************
+2020-08-10 13:01:58,455 p=12359 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:01:58,457 p=12359 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 13:01:58,457 p=12359 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:02:29,166 p=12471 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 13:02:29,188 p=12471 u=hardika.gutama n=ansible | TASK [test : Install NGINX] ***************************************************************************************************************************
+2020-08-10 13:02:30,581 p=12471 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:02:30,592 p=12471 u=hardika.gutama n=ansible | TASK [test : Install MySQL] ***************************************************************************************************************************
+2020-08-10 13:02:31,708 p=12471 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:02:31,710 p=12471 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart nginx] ****************************************************************************************************************
+2020-08-10 13:02:31,870 p=12471 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:02:31,871 p=12471 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart mysql] ****************************************************************************************************************
+2020-08-10 13:02:32,012 p=12471 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:02:32,017 p=12471 u=hardika.gutama n=ansible | TASK [test : Configure firewall] **********************************************************************************************************************
+2020-08-10 13:02:33,122 p=12471 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:02:33,131 p=12471 u=hardika.gutama n=ansible | TASK [test : debug] ***********************************************************************************************************************************
+2020-08-10 13:02:33,280 p=12471 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Second task"
+}
+2020-08-10 13:02:33,281 p=12471 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart firewalld] ************************************************************************************************************
+2020-08-10 13:02:33,419 p=12471 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:02:33,420 p=12471 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 13:02:33,421 p=12471 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:02:45,147 p=12575 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 13:02:45,166 p=12575 u=hardika.gutama n=ansible | TASK [test : copy template to server] *****************************************************************************************************************
+2020-08-10 13:02:47,449 p=12575 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:02:47,454 p=12575 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 13:02:47,455 p=12575 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:03:22,262 p=12745 u=hardika.gutama n=ansible | playbook: playbooks/sample-playbook.yaml
+2020-08-10 13:03:22,263 p=12745 u=hardika.gutama n=ansible |   play #1 (dikavm): Setting up ansible user	TAGS: []
+2020-08-10 13:03:22,266 p=12745 u=hardika.gutama n=ansible |       TASK TAGS: [configure, install]
+
+2020-08-10 13:04:18,552 p=12842 u=hardika.gutama n=ansible | playbook: playbooks/sample-playbook.yaml
+2020-08-10 13:04:18,553 p=12842 u=hardika.gutama n=ansible |   play #1 (dikavm): Setting up ansible user	TAGS: []
+    pattern: ['dikavm']
+    hosts (3):
+      hardika-vm-1.uatb.lokal
+      hardika-vm-3.uatb.lokal
+      hardika-vm-2.uatb.lokal
+2020-08-10 13:04:18,555 p=12842 u=hardika.gutama n=ansible |       TASK TAGS: [configure, install]
+
+2020-08-10 13:11:29,438 p=13971 u=hardika.gutama n=ansible | playbook: playbooks/sample-playbook.yaml
+2020-08-10 13:11:29,439 p=13971 u=hardika.gutama n=ansible |   play #1 (dikavm): Setting up ansible user	TAGS: []
+    pattern: ['dikavm']
+    hosts (3):
+      hardika-vm-1.uatb.lokal
+      hardika-vm-2.uatb.lokal
+      hardika-vm-3.uatb.lokal
+2020-08-10 13:11:29,441 p=13971 u=hardika.gutama n=ansible |       TASK TAGS: []
+
+2020-08-10 13:12:08,340 p=14062 u=hardika.gutama n=ansible | playbook: playbooks/sample-playbook.yaml
+2020-08-10 13:12:08,341 p=14062 u=hardika.gutama n=ansible |   play #1 (dikavm): Setting up ansible user	TAGS: []
+    pattern: ['dikavm']
+    hosts (3):
+      hardika-vm-2.uatb.lokal
+      hardika-vm-1.uatb.lokal
+      hardika-vm-3.uatb.lokal
+2020-08-10 13:12:08,346 p=14062 u=hardika.gutama n=ansible |       TASK TAGS: [configure, install]
+
+2020-08-10 13:12:25,066 p=14107 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 13:12:25,089 p=14107 u=hardika.gutama n=ansible | TASK [test : Configure firewall] **********************************************************************************************************************
+2020-08-10 13:12:27,226 p=14107 u=hardika.gutama n=ansible | changed: [hardika-vm-3.uatb.lokal]
+2020-08-10 13:12:27,242 p=14107 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:12:27,618 p=14107 u=hardika.gutama n=ansible | changed: [hardika-vm-2.uatb.lokal]
+2020-08-10 13:12:27,635 p=14107 u=hardika.gutama n=ansible | TASK [test : copy template to server] *****************************************************************************************************************
+2020-08-10 13:12:31,151 p=14107 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:12:31,199 p=14107 u=hardika.gutama n=ansible | changed: [hardika-vm-2.uatb.lokal]
+2020-08-10 13:12:31,246 p=14107 u=hardika.gutama n=ansible | changed: [hardika-vm-3.uatb.lokal]
+2020-08-10 13:12:31,247 p=14107 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart firewalld] ************************************************************************************************************
+2020-08-10 13:12:31,428 p=14107 u=hardika.gutama n=ansible | ok: [hardika-vm-2.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:12:31,501 p=14107 u=hardika.gutama n=ansible | ok: [hardika-vm-3.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:12:31,516 p=14107 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:12:31,518 p=14107 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 13:12:31,518 p=14107 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:12:31,519 p=14107 u=hardika.gutama n=ansible | hardika-vm-2.uatb.lokal    : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:12:31,519 p=14107 u=hardika.gutama n=ansible | hardika-vm-3.uatb.lokal    : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:19:54,327 p=15006 u=hardika.gutama n=ansible | [WARNING]: Unable to parse /Users/hardika.gutama/Workstuff/git/ftr-ansible-advanced/ansible/inventories/qa2/hosts as an inventory source
+
+2020-08-10 13:19:54,327 p=15006 u=hardika.gutama n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2020-08-10 13:19:54,328 p=15006 u=hardika.gutama n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2020-08-10 13:19:54,639 p=15006 u=hardika.gutama n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: dikavm
+
+2020-08-10 13:19:54,640 p=15006 u=hardika.gutama n=ansible | playbook: playbooks/sample-playbook.yaml
+2020-08-10 13:19:54,640 p=15006 u=hardika.gutama n=ansible |   play #1 (dikavm): Setting up ansible user	TAGS: []
+2020-08-10 13:19:54,645 p=15006 u=hardika.gutama n=ansible |       TASK TAGS: [configure, install]
+
+2020-08-10 13:20:23,512 p=15062 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 13:20:23,539 p=15062 u=hardika.gutama n=ansible | TASK [test : Install NGINX] ***************************************************************************************************************************
+2020-08-10 13:20:27,281 p=15062 u=hardika.gutama n=ansible | changed: [hardika-vm-3.uatb.lokal]
+2020-08-10 13:20:27,780 p=15062 u=hardika.gutama n=ansible | changed: [hardika-vm-2.uatb.lokal]
+2020-08-10 13:20:30,466 p=15062 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:20:30,474 p=15062 u=hardika.gutama n=ansible | TASK [test : Install MySQL] ***************************************************************************************************************************
+2020-08-10 13:20:33,116 p=15062 u=hardika.gutama n=ansible | changed: [hardika-vm-2.uatb.lokal]
+2020-08-10 13:20:33,149 p=15062 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:20:33,392 p=15062 u=hardika.gutama n=ansible | changed: [hardika-vm-3.uatb.lokal]
+2020-08-10 13:20:33,393 p=15062 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart nginx] ****************************************************************************************************************
+2020-08-10 13:20:33,767 p=15062 u=hardika.gutama n=ansible | ok: [hardika-vm-2.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:20:33,819 p=15062 u=hardika.gutama n=ansible | ok: [hardika-vm-3.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:20:33,866 p=15062 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:20:33,867 p=15062 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart mysql] ****************************************************************************************************************
+2020-08-10 13:20:34,169 p=15062 u=hardika.gutama n=ansible | ok: [hardika-vm-2.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:20:34,200 p=15062 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:20:34,272 p=15062 u=hardika.gutama n=ansible | ok: [hardika-vm-3.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:20:34,277 p=15062 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 13:20:34,277 p=15062 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:20:34,277 p=15062 u=hardika.gutama n=ansible | hardika-vm-2.uatb.lokal    : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:20:34,277 p=15062 u=hardika.gutama n=ansible | hardika-vm-3.uatb.lokal    : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:21:09,115 p=15310 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 13:21:09,143 p=15310 u=hardika.gutama n=ansible | TASK [test : Install NGINX] ***************************************************************************************************************************
+2020-08-10 13:21:11,582 p=15310 u=hardika.gutama n=ansible | changed: [hardika-vm-2.uatb.lokal]
+2020-08-10 13:21:11,591 p=15310 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:21:11,611 p=15310 u=hardika.gutama n=ansible | changed: [hardika-vm-3.uatb.lokal]
+2020-08-10 13:21:11,612 p=15310 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart nginx] ****************************************************************************************************************
+2020-08-10 13:21:11,937 p=15310 u=hardika.gutama n=ansible | ok: [hardika-vm-3.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:21:12,063 p=15310 u=hardika.gutama n=ansible | ok: [hardika-vm-2.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:21:12,066 p=15310 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:21:12,076 p=15310 u=hardika.gutama n=ansible | TASK [test : Install MySQL] ***************************************************************************************************************************
+2020-08-10 13:21:14,125 p=15310 u=hardika.gutama n=ansible | changed: [hardika-vm-2.uatb.lokal]
+2020-08-10 13:21:14,378 p=15310 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:21:14,403 p=15310 u=hardika.gutama n=ansible | changed: [hardika-vm-3.uatb.lokal]
+2020-08-10 13:21:14,404 p=15310 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart mysql] ****************************************************************************************************************
+2020-08-10 13:21:14,761 p=15310 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:21:14,836 p=15310 u=hardika.gutama n=ansible | ok: [hardika-vm-2.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:21:14,854 p=15310 u=hardika.gutama n=ansible | ok: [hardika-vm-3.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:21:14,867 p=15310 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 13:21:14,868 p=15310 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:21:14,868 p=15310 u=hardika.gutama n=ansible | hardika-vm-2.uatb.lokal    : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:21:14,868 p=15310 u=hardika.gutama n=ansible | hardika-vm-3.uatb.lokal    : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:22:06,048 p=15572 u=hardika.gutama n=ansible | PLAY [Setting up ansible user] ************************************************************************************************************************
+2020-08-10 13:22:06,082 p=15572 u=hardika.gutama n=ansible | TASK [test : Install NGINX] ***************************************************************************************************************************
+2020-08-10 13:22:08,773 p=15572 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:22:08,774 p=15572 u=hardika.gutama n=ansible | changed: [hardika-vm-2.uatb.lokal]
+2020-08-10 13:22:08,865 p=15572 u=hardika.gutama n=ansible | changed: [hardika-vm-3.uatb.lokal]
+2020-08-10 13:22:08,867 p=15572 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart nginx] ****************************************************************************************************************
+2020-08-10 13:22:09,220 p=15572 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:22:09,247 p=15572 u=hardika.gutama n=ansible | ok: [hardika-vm-3.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:22:09,320 p=15572 u=hardika.gutama n=ansible | ok: [hardika-vm-2.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:22:09,327 p=15572 u=hardika.gutama n=ansible | TASK [test : Install MySQL] ***************************************************************************************************************************
+2020-08-10 13:22:12,785 p=15572 u=hardika.gutama n=ansible | changed: [hardika-vm-2.uatb.lokal]
+2020-08-10 13:22:12,976 p=15572 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:22:13,067 p=15572 u=hardika.gutama n=ansible | changed: [hardika-vm-3.uatb.lokal]
+2020-08-10 13:22:13,074 p=15572 u=hardika.gutama n=ansible | TASK [test : Configure firewall] **********************************************************************************************************************
+2020-08-10 13:22:15,563 p=15572 u=hardika.gutama n=ansible | changed: [hardika-vm-2.uatb.lokal]
+2020-08-10 13:22:15,580 p=15572 u=hardika.gutama n=ansible | changed: [hardika-vm-1.uatb.lokal]
+2020-08-10 13:22:15,595 p=15572 u=hardika.gutama n=ansible | changed: [hardika-vm-3.uatb.lokal]
+2020-08-10 13:22:15,597 p=15572 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart mysql] ****************************************************************************************************************
+2020-08-10 13:22:15,927 p=15572 u=hardika.gutama n=ansible | ok: [hardika-vm-3.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:22:15,956 p=15572 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:22:15,991 p=15572 u=hardika.gutama n=ansible | ok: [hardika-vm-2.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:22:15,992 p=15572 u=hardika.gutama n=ansible | RUNNING HANDLER [test : restart firewalld] ************************************************************************************************************
+2020-08-10 13:22:16,342 p=15572 u=hardika.gutama n=ansible | ok: [hardika-vm-1.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:22:16,393 p=15572 u=hardika.gutama n=ansible | ok: [hardika-vm-3.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:22:16,424 p=15572 u=hardika.gutama n=ansible | ok: [hardika-vm-2.uatb.lokal] => {
+    "msg": "Restarting nginx...."
+}
+2020-08-10 13:22:16,426 p=15572 u=hardika.gutama n=ansible | PLAY RECAP ********************************************************************************************************************************************
+2020-08-10 13:22:16,426 p=15572 u=hardika.gutama n=ansible | hardika-vm-1.uatb.lokal    : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:22:16,427 p=15572 u=hardika.gutama n=ansible | hardika-vm-2.uatb.lokal    : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-08-10 13:22:16,427 p=15572 u=hardika.gutama n=ansible | hardika-vm-3.uatb.lokal    : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

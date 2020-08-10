@@ -2,14 +2,5 @@
 - name: Setting up ansible user
   hosts: dikavm
   become: "yes"
-  handlers:
-    - name: debug1
-      debug:
-        msg: First handler
-  tasks:
-    - debug:
-        msg: First task
-    - debug:
-        msg: Second task
   roles:
     - test

@@ -1,2 +1,13 @@
 ---
 # handlers file for test
+- name: restart nginx
+  debug:
+    msg: Restarting nginx....
+
+- name: restart mysql
+  debug:
+    msg: Restarting nginx....
+
+- name: restart firewalld
+  debug:
+    msg: Restarting nginx....

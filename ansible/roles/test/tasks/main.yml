@@ -1,2 +1,5 @@
 ---
 # tasks file for test
+
+- import_tasks: install_nginx.yml
+- import_tasks: configure_nginx.yml
